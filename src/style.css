@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Tajawal&display=swap');
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --gray-text: #8E8E93;
+  --blue: #3498F5;
+  --second-light-gray: #2E637F1A;
+  --green: #27AE60;
+  --light-gray: #F3F5F5;
+  --second-color:#2E637F;
+  --red-color:#C32B43;
+}
+
+* {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+
+}
+body {
+  direction: rtl;
+}
+p{
+  margin: 0;
+}
+.page-container {
+  margin-right: 230px;
+  height: 90vh;
+  position: relative;
+
+}
+@media only screen and (max-width: 600px) {
+  .login-section {
+    width: 100%;
+    margin-right: 0%;
+  }
+
+  .page-container {
+    margin-right: 0px;
+    height: auto;
+  }
+
+}
