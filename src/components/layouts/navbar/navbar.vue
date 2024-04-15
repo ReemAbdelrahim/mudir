@@ -497,6 +497,9 @@ export default {
     padding: 20px;
    
   }
+  .navbar-nav {
+flex-direction: row !important;
+}
 }
 
 @media only screen and (max-width: 600px) {
@@ -509,6 +512,9 @@ export default {
     margin-right: 0px;
     height: auto;
   }
+  .navbar-nav {
+flex-direction: row !important;
+}
 
 }
 </style>

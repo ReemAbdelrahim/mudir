@@ -1,11 +1,11 @@
 <template>
-   <aside class="side-nav" id="side-nav">
+  <aside class="side-nav" id="side-nav">
     <div class="company-logo text-center">
       <img src="/images/logo.png" alt="" />
     </div>
     <ul class="side-nav">
       <li :class="{ 'active-li': currentRoute === '/' }">
-       <router-link to="/">
+        <router-link to="/">
           <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M7.8925 3.04227L3.17625 6.71727C2.38875 7.32977 1.75 8.63352 1.75 9.62227V16.106C1.75 18.136 3.40375 19.7985 5.43375 19.7985H15.5663C17.5963 19.7985 19.25 18.136 19.25 16.1148V9.74477C19.25 8.68602 18.5413 7.32977 17.675 6.72602L12.2675 2.93727C11.0425 2.07977 9.07375 2.12352 7.8925 3.04227Z"
@@ -18,7 +18,7 @@
       </li>
 
       <li :class="{ 'active-li': currentRoute === '/myads' }">
-       <router-link to="/myads">
+        <router-link to="/myads">
           <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M18.3402 16.1673L16.914 16.6486C16.5202 16.7798 16.2052 17.0861 16.074 17.4886L15.5927 18.9148C15.1815 20.1486 13.449 20.1223 13.064 18.8886L11.4452 13.6823C11.1302 12.6498 12.084 11.6873 13.1077 12.0111L18.3227 13.6298C19.5477 14.0148 19.5652 15.7561 18.3402 16.1673Z"
@@ -47,7 +47,7 @@
         <span class="message-counter">1</span>
       </li>
       <li>
-        <a href="">
+        <router-link to="/stateMnagment">
           <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M7.8925 3.04227L3.17625 6.71727C2.38875 7.32977 1.75 8.63352 1.75 9.62227V16.106C1.75 18.136 3.40375 19.7985 5.43375 19.7985H15.5663C17.5963 19.7985 19.25 18.136 19.25 16.1148V9.74477C19.25 8.68602 18.5413 7.32977 17.675 6.72602L12.2675 2.93727C11.0425 2.07977 9.07375 2.12352 7.8925 3.04227Z"
@@ -58,7 +58,7 @@
               stroke-linejoin="round" />
           </svg>
           الادراة العقارية
-        </a>
+        </router-link>
       </li>
       <li>
         <a href="">
@@ -120,18 +120,18 @@
 <script>
 export default {
   data() {
-  return {
-    currentRoute: '/'
-  };
-},
-created() {
+    return {
+      currentRoute: '/'
+    };
+  },
+  created() {
 
-  this.currentRoute = window.location.pathname;
-  this.$router.afterEach((to) => {
-    console.log(to.path);
-    this.currentRoute = to.path;
-  });
-}
+    this.currentRoute = window.location.pathname;
+    this.$router.afterEach((to) => {
+      console.log(to.path);
+      this.currentRoute = to.path;
+    });
+  }
 }
 </script>
 
@@ -177,16 +177,17 @@ aside {
 .side-nav li:hover {
   background-color: #3498F51A;
 }
+
 .message-counter {
-    background-color: #C32B43;
-    color: white;
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
-    text-align: center;
-    border-radius: 50%;
-    display: inline-block;
-    font-size: 14px;
-    margin-right: 20px;
+  background-color: #C32B43;
+  color: white;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 20px;
 }
 </style>
