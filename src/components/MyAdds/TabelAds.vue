@@ -95,7 +95,7 @@
                                         </button>
                                         <ul class="dropdown-menu text-end" aria-labelledby="dropdownMenuButton1">
                                             <li>
-                                                <router-link to="/myads/1" class="dropdown-item" >
+                                                <router-link to="/myads/1" class="dropdown-item">
                                                     <span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                                             xmlns="http://www.w3.org/2000/svg">
                                                             <path d="M0.75 16.5H17.25" stroke="#8E8E93"
@@ -126,9 +126,10 @@
                                                         </svg>
                                                     </span>
                                                     <span>عرض البيانات</span>
-                                                </router-link></li>
-                                                <li @click="toggleStop" class="clickable" v-show="!showStop">
-                                                    <a class="dropdown-item" href="#">
+                                                </router-link>
+                                            </li>
+                                            <li @click="toggleStop" class="clickable" v-show="!showStop">
+                                                <a class="dropdown-item" href="#">
                                                     <span>
                                                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                                             xmlns="http://www.w3.org/2000/svg">
@@ -147,7 +148,8 @@
 
                                                 </a>
                                             </li>
-                                            <li @click="toggleStop" class="clickable" v-show="showStop"><a class="dropdown-item" href="#">
+                                            <li @click="toggleStop" class="clickable" v-show="showStop"><a
+                                                    class="dropdown-item" href="#">
                                                     <span><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                                             xmlns="http://www.w3.org/2000/svg">
                                                             <path
@@ -163,7 +165,7 @@
 
                                                 </a>
                                             </li>
-                                           
+
                                             <li>
                                                 <a class="dropdown-item" href="#">
 
@@ -183,8 +185,9 @@
 
                                                 </a>
                                             </li>
-                                      
-                                            <li ><a class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#makead">
+
+                                            <li><a class="dropdown-item" data-bs-toggle="modal"
+                                                    data-bs-target="#makead">
                                                     <span>
                                                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                                             xmlns="http://www.w3.org/2000/svg">
@@ -578,8 +581,9 @@
                     <li class="page-item ">
                         <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
                             <svg width="5" height="7" viewBox="0 0 5 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0.344 0.944H2.072L4.832 3.668L2.072 6.392H0.344L3.116 3.668L0.344 0.944Z" fill="#33312C"/>
-</svg>
+                                <path d="M0.344 0.944H2.072L4.832 3.668L2.072 6.392H0.344L3.116 3.668L0.344 0.944Z"
+                                    fill="#33312C" />
+                            </svg>
 
                         </a>
                     </li>
@@ -595,8 +599,9 @@
                     <li class="page-item">
                         <a class="page-link" href="#">
                             <svg width="5" height="7" viewBox="0 0 5 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M2.936 6.392L0.176 3.668L2.936 0.944H4.664L1.892 3.668L4.664 6.392H2.936Z" fill="#33312C"/>
-</svg>
+                                <path d="M2.936 6.392L0.176 3.668L2.936 0.944H4.664L1.892 3.668L4.664 6.392H2.936Z"
+                                    fill="#33312C" />
+                            </svg>
 
                         </a>
                     </li>
@@ -612,21 +617,21 @@
 import { RouterLink } from 'vue-router';
 import MakeAdModal from '../Ads/MakeAdModal.vue';
 export default {
-  
-    
-  data() {
-    return {
-      showStop: false
-    };
-  },
-  methods: {
-    toggleStop() {
-      this.showStop = !this.showStop;
+
+
+    data() {
+        return {
+            showStop: false
+        };
+    },
+    methods: {
+        toggleStop() {
+            this.showStop = !this.showStop;
+        }
+    },
+    components: {
+        MakeAdModal,
     }
-  },
-  components:{
-    MakeAdModal,
-  }
 };
 </script>
 

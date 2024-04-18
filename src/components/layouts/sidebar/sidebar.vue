@@ -4,7 +4,7 @@
       <img src="/images/logo.png" alt="" />
     </div>
     <ul class="side-nav">
-      <li :class="{ 'active-li': currentRoute === '/' }">
+      <li :class="{ 'active-li': currentRoute === '/home' }">
         <router-link to="/">
           <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -46,7 +46,7 @@
         </router-link>
         <span class="message-counter">1</span>
       </li>
-      <li>
+      <li :class="{ 'active-li': currentRoute === '/stateMnagment' }">
         <router-link to="/stateMnagment">
           <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -60,8 +60,8 @@
           الادراة العقارية
         </router-link>
       </li>
-      <li>
-        <a href="">
+      <li :class="{ 'active-li': currentRoute === '/contracts' }">
+        <router-link to="/contracts">
           <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M19.25 9.30737V13.6824C19.25 18.0574 17.5 19.8074 13.125 19.8074H7.875C3.5 19.8074 1.75 18.0574 1.75 13.6824V8.43237C1.75 4.05737 3.5 2.30737 7.875 2.30737H12.25"
@@ -74,10 +74,10 @@
               stroke-linejoin="round" />
           </svg>
           العقود
-        </a>
+        </router-link>
       </li>
-      <li>
-        <a href="">
+      <li :class="{ 'active-li': currentRoute === '/FinantialManagment' }">
+        <router-link to="/FinantialManagment">
           <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M7.58789 13.096C7.58789 14.2247 8.45414 15.1347 9.53039 15.1347H11.7266C12.6629 15.1347 13.4241 14.3385 13.4241 13.3585C13.4241 12.291 12.9604 11.9147 12.2691 11.6697L8.74289 10.4447C8.05164 10.1997 7.58789 9.82349 7.58789 8.75599C7.58789 7.77599 8.34914 6.97974 9.28539 6.97974H11.4816C12.5579 6.97974 13.4241 7.88974 13.4241 9.01849"
@@ -90,7 +90,7 @@
           </svg>
 
           الادراة المالية
-        </a>
+        </router-link>
       </li>
       <li>
         <a href="">
