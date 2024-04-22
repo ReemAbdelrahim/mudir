@@ -31,7 +31,7 @@
                   </span>
                 </div>
                 <div class="w-50 text-center ">
-                  <button class="btn btn-primary add-contract"  data-bs-toggle="modal" href="#editModal" role="button">
+                  <button class="btn btn-primary add-contract" data-bs-toggle="modal" href="#editModal" role="button">
                     تسجيل عقد جديد
                     <span><svg width="21" height="22" viewBox="0 0 21 22" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -49,6 +49,36 @@
               </div>
             </div>
           </div>
+
+              <!--delete Modal -->
+              <div class="modal fade" id="exampleModal2" tabindex="-1"
+                              aria-labelledby="exampleModal2Label" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content p-3">
+
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+
+                                  <div class="modal-body ">
+                                    <div class="text-center">
+                                      <img src="/images/delete.png" alt="">
+                                      <h4 class="py-3">حذف العقد x</h4>
+                                      <h4>هل أنت متأكد من حذف هذا العقد نهائيا ؟</h4>
+                                    </div>
+                                    <div class="d-flex">
+                                      <div class="w-50 p-2">
+                                        <button class="delete-btn">نعم حذف </button>
+                                      </div>
+                                      <div class="w-50 p-2">
+                                        <button class="cancel-btn">الغاء</button>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+
           <div class="tab-content mt-3" id="myTabContent">
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
@@ -96,7 +126,8 @@
 
 
 
-                              <li><a @click="showModal" class="dropdown-item" data-bs-toggle="modal" href="#editModal" role="button">
+                              <li><a @click="showModal" class="dropdown-item" data-bs-toggle="modal" href="#editModal"
+                                  role="button">
                                   <span class="ps-2 ">
                                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                       xmlns="http://www.w3.org/2000/svg">
@@ -145,37 +176,9 @@
                                 </a></li>
                             </ul>
 
-                         
 
-                            <!--delete Modal -->
-                            <div class="modal fade" id="exampleModal2" tabindex="-1"
-                              aria-labelledby="exampleModal2Label" aria-hidden="true">
-                              <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content p-3">
 
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-
-                                  <div class="modal-body ">
-                                    <div class="text-center">
-                                      <img src="/images/delete.png" alt="">
-                                      <h4 class="py-3">حذف العقد x</h4>
-                                      <h4>هل أنت متأكد من حذف هذا العقد نهائيا ؟</h4>
-                                    </div>
-                                    <div class="d-flex">
-                                      <div class="w-50 p-2">
-                                        <button class="delete-btn">نعم حذف </button>
-                                      </div>
-                                      <div class="w-50 p-2">
-                                        <button class="cancel-btn">الغاء</button>
-                                      </div>
-                                    </div>
-                                  </div>
-
-                                </div>
-                              </div>
-                            </div>
-
+                          
 
 
 
@@ -196,7 +199,7 @@
                   </tbody>
                 </table>
               </div>
-             
+
               <nav aria-label="...">
                 <ul class="pagination justify-content-center gap-2">
                   <li class="page-item ">
@@ -239,21 +242,21 @@
 
                   <tbody>
                     <tr class="tr-light">
-                      <td scope="col">م</td>
-                      <td scope="col">تعريف المبنى</td>
-                      <td scope="col">المساحة</td>
-                      <td scope="col">عدد الوحدات</td>
-                      <td scope="col">نوع المعاملة</td>
-                      <td scope="col"> نوع التسليم</td>
-                      <td scope="col">الحالة</td>
-                      <td scope="col">السعر المقترح</td>
+                      <td scope="col">رقم العقد</td>
+                      <td scope="col">تاريخ الإصدار</td>
+                      <td scope="col">اسم المستأجر</td>
+                      <td scope="col">مدة إشعار الإخلاء</td>
+                      <td scope="col">المدة</td>
+                      <td scope="col"> المساحة</td>
+                      <td scope="col">قيمة الإيجار</td>
+                      <td scope="col">ملاحظات</td>
 
                       <td scope="col">الخيارات</td>
                     </tr>
                     <tr>
                       <td scope="row">1</td>
                       <td class="second-color-text">اسم العقار </td>
-                      <td><span class="present-span">معروض </span></td>
+                      <td><span>معروض </span></td>
                       <td>150 م</td>
                       <td>6 م </td>
                       <td>12</td>
@@ -278,8 +281,59 @@
 
 
 
-                              <li><a  class="dropdown-item" data-bs-toggle="modal" href="#editModal" role="button">
+                              <li>
+                                <a class="dropdown-item">
                                   <span class="ps-2 ">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                        d="M16.5 7.5V11.25C16.5 15 15 16.5 11.25 16.5H6.75C3 16.5 1.5 15 1.5 11.25V6.75C1.5 3 3 1.5 6.75 1.5H10.5"
+                                        stroke="#8E8E93" stroke-width="1.125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                      <path d="M16.5 7.5H13.5C11.25 7.5 10.5 6.75 10.5 4.5V1.5L16.5 7.5Z"
+                                        stroke="#8E8E93" stroke-width="1.125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                      <path d="M5.25 9.75H9.75" stroke="#8E8E93" stroke-width="1.125"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                      <path d="M5.25 12.75H8.25" stroke="#8E8E93" stroke-width="1.125"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+
+
+                                  </span>
+                                  <span class="gray-text">جميع البيانات</span>
+                                </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item"  @click="showModalUpload"  data-bs-toggle="modal" href="#uplaodModal"
+                                  role="button" >
+                                  <span class="ps-2">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                        d="M6.75 16.5H11.25C15 16.5 16.5 15 16.5 11.25V6.75C16.5 3 15 1.5 11.25 1.5H6.75C3 1.5 1.5 3 1.5 6.75V11.25C1.5 15 3 16.5 6.75 16.5Z"
+                                        stroke="#8E8E93" stroke-width="1.125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                      <path d="M6.75 7.13184L9 4.88184L11.25 7.13184" stroke="#8E8E93"
+                                        stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round" />
+                                      <path d="M9 4.88184V10.8818" stroke="#8E8E93" stroke-width="1.125"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                      <path d="M4.5 12.3828C7.4175 13.3578 10.5825 13.3578 13.5 12.3828"
+                                        stroke="#8E8E93" stroke-width="1.125" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </svg>
+
+
+
+                                  </span>
+                                  <span class="gray-text">رفع العقد</span>
+                                </a>
+                              </li>
+
+                              <li>
+                                <a @click="showModalTwo" class="dropdown-item" data-bs-toggle="modal" href="#editModalTwo"
+                                  role="button">
+                                  <span class="ps-2">
                                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                       xmlns="http://www.w3.org/2000/svg">
                                       <path
@@ -290,14 +344,19 @@
                                         d="M12.0299 2.26495L6.11991 8.17495C5.89491 8.39995 5.66991 8.84245 5.62491 9.16495L5.30241 11.4224C5.18241 12.2399 5.75991 12.8099 6.57741 12.6974L8.83491 12.3749C9.14991 12.3299 9.59241 12.1049 9.82491 11.8799L15.7349 5.96995C16.7549 4.94995 17.2349 3.76495 15.7349 2.26495C14.2349 0.764945 13.0499 1.24495 12.0299 2.26495Z"
                                         stroke="#8E8E93" stroke-width="1.125" stroke-miterlimit="10"
                                         stroke-linecap="round" stroke-linejoin="round" />
-                                      <path d="M11.1824 3.1123C11.6849 4.9048 13.0874 6.3073 14.8874 6.8173"
+                                      <path d="M11.1824 3.11328C11.6849 4.90578 13.0874 6.30828 14.8874 6.81828"
                                         stroke="#8E8E93" stroke-width="1.125" stroke-miterlimit="10"
                                         stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
 
+
+
+
                                   </span>
                                   <span class="gray-text">تعديل</span>
-                                </a></li>
+                                </a>
+                              </li>
+
                               <li><a class="dropdown-item" href="#" type="button" data-bs-toggle="modal"
                                   data-bs-target="#exampleModal2">
                                   <span class="ps-2">
@@ -327,37 +386,9 @@
                                 </a></li>
                             </ul>
 
-                         
 
-                            <!--delete Modal -->
-                            <div class="modal fade" id="exampleModal2" tabindex="-1"
-                              aria-labelledby="exampleModal2Label" aria-hidden="true">
-                              <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content p-3">
 
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-
-                                  <div class="modal-body ">
-                                    <div class="text-center">
-                                      <img src="/images/delete.png" alt="">
-                                      <h4 class="py-3">حذف العقد x</h4>
-                                      <h4>هل أنت متأكد من حذف هذا العقد نهائيا ؟</h4>
-                                    </div>
-                                    <div class="d-flex">
-                                      <div class="w-50 p-2">
-                                        <button class="delete-btn">نعم حذف </button>
-                                      </div>
-                                      <div class="w-50 p-2">
-                                        <button class="cancel-btn">الغاء</button>
-                                      </div>
-                                    </div>
-                                  </div>
-
-                                </div>
-                              </div>
-                            </div>
-
+                        
 
 
 
@@ -378,7 +409,7 @@
                   </tbody>
                 </table>
               </div>
-             
+
               <nav aria-label="...">
                 <ul class="pagination justify-content-center gap-2">
                   <li class="page-item ">
@@ -411,7 +442,7 @@
                 </ul>
               </nav>
             </div>
-            
+
           </div>
         </div>
       </div>
@@ -419,6 +450,8 @@
 
 
     <AddBuildingModal ref="modal"></AddBuildingModal>
+    <editContractModal ref="modal2"></editContractModal>
+    <uploadModal ref="modal3"></uploadModal>
   </div>
 </template>
 
@@ -429,14 +462,25 @@
 
 // }
 import AddBuildingModal from './AddBuildingModal.vue';
+import editContractModal from './editContractModal.vue';
+import uploadModal from './uploadModal.vue';
+
 
 export default {
   components: {
-    AddBuildingModal
+    AddBuildingModal,
+    editContractModal,
+    uploadModal,
   },
   methods: {
     showModal() {
       this.$refs.modal.visible = true;
+    },
+    showModalTwo() {
+      this.$refs.modalTwo.visible = true;
+    },
+    showModalUpload() {
+      this.$refs.modalTwo.visible = true;
     }
   }
 };
@@ -578,157 +622,158 @@ export default {
 }
 
 .font-14 {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .inp {
-    position: relative;
+  position: relative;
 }
 
 .inp-icon {
-    position: absolute;
-    top: 6px;
-    left: 10px;
+  position: absolute;
+  top: 6px;
+  left: 10px;
 
 }
 
 .form-select {
 
-    padding: 0.375rem 0.5rem 0.375rem 0.75rem;
+  padding: 0.375rem 0.5rem 0.375rem 0.75rem;
 
-    color: var(--gray-text);
+  color: var(--gray-text);
 
-    background-position: left 0.75rem center;
+  background-position: left 0.75rem center;
 
 }
 
 .cat-bg {
-    background-color: var(--light-gray);
+  background-color: var(--light-gray);
 }
 
 .canceling-btn {
-    border: 1px solid #D9DBE1;
-    border-radius: 10px;
+  border: 1px solid #D9DBE1;
+  border-radius: 10px;
 
 
 }
 
 .btn-file {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    z-index: 1;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 1;
 }
 
 .btn-file__actions {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .btn-file__actions__item {
-    padding: 35px;
-    font-size: 1.5em;
-    color: #d3e0e9;
-    cursor: pointer;
-    text-decoration: none;
-    border-top: 3px dashed #d3e0e9;
-    border-left: 3px dashed #d3e0e9;
-    border-bottom: 3px dashed #d3e0e9;
+  padding: 35px;
+  font-size: 1.5em;
+  color: #d3e0e9;
+  cursor: pointer;
+  text-decoration: none;
+  border-top: 3px dashed #d3e0e9;
+  border-left: 3px dashed #d3e0e9;
+  border-bottom: 3px dashed #d3e0e9;
 }
 
 .btn-file__actions__item:first-child {
-    border-top-left-radius: 35px;
-    border-bottom-left-radius: 35px;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
 }
 
 .btn-file__actions__item:last-child {
-    border-top-right-radius: 35px;
-    border-bottom-right-radius: 35px;
-    border-right: 3px dashed #d3e0e9;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  border-right: 3px dashed #d3e0e9;
 }
 
 .btn-file__actions__item:hover,
 .btn-file__actions__item:focus {
-    color: #636b6f;
-    background-color: rgba(211, 224, 233, 0.1);
+  color: #636b6f;
+  background-color: rgba(211, 224, 233, 0.1);
 }
 
 .btn-file__actions__item:hover--shadow,
 .btn-file__actions__item:focus--shadow {
-    box-shadow: #d3e0e9 0 0 60px 15px;
+  box-shadow: #d3e0e9 0 0 60px 15px;
 }
 
 .btn-file__actions__item--shadow {
-    display: inline-block;
-    position: relative;
-    z-index: 1;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
 }
 
 .btn-file__actions__item--shadow::before {
-    content: " ";
-    box-shadow: #fff 0 0 60px 40px;
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    z-index: -1;
+  content: " ";
+  box-shadow: #fff 0 0 60px 40px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  z-index: -1;
 }
 
 .btn-file__preview {
-    opacity: 0.5;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-    border-radius: 35px;
-    background-size: cover;
-    background-position: center;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  border-radius: 35px;
+  background-size: cover;
+  background-position: center;
 }
 
 .form-group label.attachment {
-    width: 100%;
+  width: 100%;
 }
 
 .form-group label.attachment .btn-create>a,
 .form-group label.attachment .btn-create>div {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
 .form-group label.attachment input[type='file'] {
-    display: none;
+  display: none;
 }
 
 .bg-light-gray {
-    background-color: #F3F5F5;
+  background-color: #F3F5F5;
 }
 
 .content-p {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .cover-btn {
-    background-color: #636b6f;
-    color: white;
-    border: 0;
-    padding: 8px 15px;
-    margin-left: 10px;
+  background-color: #636b6f;
+  color: white;
+  border: 0;
+  padding: 8px 15px;
+  margin-left: 10px;
 }
 
 .delete-btn2 {
-    color: white;
-    border: 0;
-    padding: 8px 15px;
-    margin-left: 10px;
+  color: white;
+  border: 0;
+  padding: 8px 15px;
+  margin-left: 10px;
 }
-.btn-modall{
-    background-color: white;
-    color: #8E8E93;
-    padding: 8px 30px;
-    border: 1px solid #D9DBE1;
-    border-radius: 10px;
-    margin-left: 10px;
+
+.btn-modall {
+  background-color: white;
+  color: #8E8E93;
+  padding: 8px 30px;
+  border: 1px solid #D9DBE1;
+  border-radius: 10px;
+  margin-left: 10px;
 }
 </style>
