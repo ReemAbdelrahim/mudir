@@ -282,7 +282,8 @@
 
 
                               <li>
-                                <a class="dropdown-item">
+                                <a class="dropdown-item"  @click="showModalAllData"  data-bs-toggle="modal" href="#allDataModal"
+                                  role="button">
                                   <span class="ps-2 ">
                                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                       xmlns="http://www.w3.org/2000/svg">
@@ -452,18 +453,16 @@
     <AddBuildingModal ref="modal"></AddBuildingModal>
     <editContractModal ref="modal2"></editContractModal>
     <uploadModal ref="modal3"></uploadModal>
+    <AllData ref="modal4"></AllData>
   </div>
 </template>
 
 <script>
-// import AddBuildingModal from './AddBuildingModal.vue'
-// export default {
-//   components: { AddBuildingModal },
 
-// }
 import AddBuildingModal from './AddBuildingModal.vue';
 import editContractModal from './editContractModal.vue';
 import uploadModal from './uploadModal.vue';
+import AllData from './AllData.vue';
 
 
 export default {
@@ -471,6 +470,7 @@ export default {
     AddBuildingModal,
     editContractModal,
     uploadModal,
+    AllData
   },
   methods: {
     showModal() {
@@ -480,6 +480,9 @@ export default {
       this.$refs.modalTwo.visible = true;
     },
     showModalUpload() {
+      this.$refs.modalTwo.visible = true;
+    },
+    showModalAllData() {
       this.$refs.modalTwo.visible = true;
     }
   }

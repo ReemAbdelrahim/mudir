@@ -43,6 +43,21 @@ const router = createRouter({
       name: "Contracts",
       component: () => import("../Views/contracts/contracts.vue")
     },
+    {
+      path: "/FinantialManagment",
+      name: "FinantialManameant",
+      component: () => import("../Views/FinantialManagment/FinantialManagment.vue")
+    },
+    {
+      path: "/decoration",
+      name: "Decoration",
+      component: () => import("../Views/decoration/Decoration.vue")
+    },
+    {
+      path: "/decoration/:id",
+      name: "DecorationDetails",
+      component: () => import("../Views/decoration/DecorationDetails.vue")
+    },
 
   ]
 })

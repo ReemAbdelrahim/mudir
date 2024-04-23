@@ -92,8 +92,8 @@
           الادراة المالية
         </router-link>
       </li>
-      <li>
-        <a href="">
+      <li :class="{ 'active-li': currentRoute === '/Decoration' }">
+        <router-link to="/Decoration">
           <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M18.1826 12.5011V16.8236H2.81763V12.5011C2.81763 8.28359 6.23013 4.87109 10.4476 4.87109H10.5526C14.7701 4.87109 18.1826 8.28359 18.1826 12.5011Z"
@@ -106,13 +106,9 @@
           </svg>
 
           الديكور
-        </a>
+        </router-link>
       </li>
-      <!-- <router-link to="/reem">reem</router-link>
-      <br>
-      <router-link to="/myads">ad derails</router-link>
-      <br>
-      <router-link to="/chats">chat</router-link> -->
+    
     </ul>
   </aside>
 </template>

@@ -11,17 +11,14 @@
 
 <script>
     import TabelAds from "../../components/MyAdds/TabelAds.vue"
-    import PlaceDetails from "../../components/MyAdds/PlaceDetails.vue";
+    // import PlaceDetails from "../../components/MyAdds/PlaceDetails.vue";
     import MakeAdModal from "../../components/Ads/MakeAdModal.vue";
     
 export default {
     components: {
         TabelAds,
-        PlaceDetails,
+        // PlaceDetails,
         MakeAdModal,
-  
-  
-
   },
 }
 </script>
