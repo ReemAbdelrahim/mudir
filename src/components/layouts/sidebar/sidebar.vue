@@ -108,6 +108,23 @@
           الديكور
         </router-link>
       </li>
+      <li :class="{ 'active-li': currentRoute === '/Packages' }">
+        <router-link to="/Packages">
+          <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M18.1826 12.5011V16.8236H2.81763V12.5011C2.81763 8.28359 6.23013 4.87109 10.4476 4.87109H10.5526C14.7701 4.87109 18.1826 8.28359 18.1826 12.5011Z"
+              stroke="#A6A8B1" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M10.5 2.30737V4.87112" stroke="#A6A8B1" stroke-width="1.3125" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path
+              d="M13.6939 16.8237C13.5801 18.495 12.1889 19.8075 10.5001 19.8075C8.81139 19.8075 7.42015 18.495 7.3064 16.8237H13.6939Z"
+              stroke="#A6A8B1" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+          الباقات
+        </router-link>
+      </li>
+     
     
     </ul>
   </aside>

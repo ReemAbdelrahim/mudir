@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Tajawal&display=swap');
 @import 'bootstrap/dist/css/bootstrap.css';
+
+@layer bootstrap-reboot, primevue;
+
+@import "bootstrap-reboot.css" layer(bootstrap-rebooot);
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

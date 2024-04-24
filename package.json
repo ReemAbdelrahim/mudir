@@ -11,7 +11,9 @@
   "dependencies": {
     "@canvasjs/vue-charts": "^1.0.4",
     "bootstrap": "^5.3.3",
+    "chart.js": "^3.9.1",
     "lodash": "^4.17.21",
+    "primevue": "^3.51.0",
     "vue": "^3.4.21",
     "vue-data-tables": "^3.4.5",
     "vue-router": "^4.3.0"

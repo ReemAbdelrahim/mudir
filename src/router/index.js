@@ -58,6 +58,16 @@ const router = createRouter({
       name: "DecorationDetails",
       component: () => import("../Views/decoration/DecorationDetails.vue")
     },
+    {
+      path: "/profile",
+      name: "Profile",
+      component: () => import("../Views/profile/profile.vue")
+    },
+    {
+      path: "/packages",
+      name: "Packages",
+      component: () => import("../Views/packages/pakages.vue")
+    },
 
   ]
 })

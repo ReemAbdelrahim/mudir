@@ -1,49 +1,136 @@
 <template>
-    <div class="page-container">
-  <CanvasJSChart :options="options" :styles="styleOptions"/>
-</div>
+  <div class="page-container">
+
+    <div class="p-10 bg-light">
+      <div class=" scrool p-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 ">
+              <div class="bg-white scroll-notify p-3">
+                <div class="d-flex justify-content-between">
+                  <h4>إشعارات</h4>
+                  <p class="text-primary">تم سداد الكل</p>
+                </div>
+                <div class="d-flex justify-content-between mt-3">
+                  <div>
+                    <p class="text-gray">سداد قسط ايجار عقار x بإسم Y</p>
+                  </div>
+                  <div class=" d-flex gap-2">
+                    <button class="btn btn-success">سدد</button>
+                    <button class="btn btn-second px-4">لا</button>
+                    <button class="btn btn-light">لاحقا</button>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between mt-3">
+                  <div>
+                    <p class="text-gray">سداد قسط ايجار عقار x بإسم Y</p>
+                  </div>
+                  <div class=" d-flex gap-2">
+                    <button class="btn btn-success">سدد</button>
+                    <button class="btn btn-second px-4">لا</button>
+                    <button class="btn btn-light">لاحقا</button>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between mt-3">
+                  <div>
+                    <p class="text-gray">سداد قسط ايجار عقار x بإسم Y</p>
+                  </div>
+                  <div class=" d-flex gap-2">
+                    <button class="btn btn-success">سدد</button>
+                    <button class="btn btn-second px-4">لا</button>
+                    <button class="btn btn-light">لاحقا</button>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between mt-3">
+                  <div>
+                    <p class="text-gray">سداد قسط ايجار عقار x بإسم Y</p>
+                  </div>
+                  <div class=" d-flex gap-2">
+                    <button class="btn btn-success">سدد</button>
+                    <button class="btn btn-second px-4">لا</button>
+                    <button class="btn btn-light">لاحقا</button>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between mt-3">
+                  <div>
+                    <p class="text-gray">سداد قسط ايجار عقار x بإسم Y</p>
+                  </div>
+                  <div class=" d-flex gap-2">
+                    <button class="btn btn-success">سدد</button>
+                    <button class="btn btn-second px-4">لا</button>
+                    <button class="btn btn-light">لاحقا</button>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between mt-3">
+                  <div>
+                    <p class="text-gray">سداد قسط ايجار عقار x بإسم Y</p>
+                  </div>
+                  <div class=" d-flex gap-2">
+                    <button class="btn btn-success">سدد</button>
+                    <button class="btn btn-second px-4">لا</button>
+                    <button class="btn btn-light">لاحقا</button>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between mt-3">
+                  <div>
+                    <p class="text-gray">سداد قسط ايجار عقار x بإسم Y</p>
+                  </div>
+                  <div class=" d-flex gap-2">
+                    <button class="btn btn-success">سدد</button>
+                    <button class="btn btn-second px-4">لا</button>
+                    <button class="btn btn-light">لاحقا</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <dounghtChart></dounghtChart>
+            </div>
+            <div class="col-12">
+              <VicticalBar></VicticalBar>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 </template>
 
 <script>
- 
-  export default {
-    data() {
-      return {
-        options: {
-          theme: "light2",
-          animationEnabled: true,
-          title: {
-            text: "World Silicon Production"
-          },
-          subtitles: [{
-            text: "in tonnes"
-          }],
-          data: [{
-            type: "doughnut",
-            startAngle: 90,
-            indexLabel: "{label} {y}(#percent%)",
-            yValueFormatString: "#,##0K",
-            toolTipContent: "<span style='\"'color: {color};'\"'>{label}</span>, {y} tonnes",
-            dataPoints: [
-              { label: "China", y: 4500, color: "#DE2910" },
-              { label: "Russia", y: 600, color: "#0039A6" },
-              { label: "India", y: 370, color: "#F79432" },
-              { label: "United States Of America", y: 320, color: "#37366B" },
-              { label: "Brazil", y: 210, color: "#F5D900" },
-              { label: "Malaysia", y: 150, color: "#F7C600" },
-              { label: "Others", y: 876, color: "#7a7677" }
-            ]
-          }]
-        },
-        styleOptions: {
-          width: "100%",
-          height: "360px"
-        }
-      }
-    }
+import dounghtChart from '../FinantialManagment/dounghtChart.vue'
+import VicticalBar from '../FinantialManagment/VicticalBar.vue'
+export default {
+  components: {
+    dounghtChart,
+    VicticalBar
   }
+
+}
 </script>
 
 <style>
+.page-container {
+  margin-right: 230px;
+  height: 90vh;
+  position: relative;
+  /* overflow-x: hidden; */
 
+}
+
+.scrool {
+  height: 85vh;
+  overflow-y: scroll;
+
+}
+.btn-second{
+  background-color: #2E637F;
+  color: white;
+}
+.scroll-notify{
+  height: 380px;
+  overflow-y: scroll;
+}
 </style>

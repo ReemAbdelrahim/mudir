@@ -1,5 +1,5 @@
 <template>
-   <nav class="navbar navbar-expand-lg navbar-light bg-white p-0 top-nav">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white p-0 top-nav">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">الرئيسية</a>
 
@@ -33,8 +33,9 @@
             </a>
           </li>
 
-          <li class="nav-item profile-mob" onclick="toogleProfile()">
-            <a class="nav-link" href="#" tabindex="-1">
+          <li class="nav-item profile-mob dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+              aria-expanded="false">
               <div class="d-flex gap-3">
                 <img src="/images/profile.png" alt="" class="profile-img" />
                 <div>
@@ -43,6 +44,37 @@
                 </div>
               </div>
             </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li>
+                <router-link to="/Profile" class="dropdown-item" >
+                  <span class="ps-2"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M5.4375 4.5C5.4375 2.53249 7.03249 0.9375 9 0.9375C10.9675 0.9375 12.5625 2.53249 12.5625 4.5C12.5625 6.46751 10.9675 8.0625 9 8.0625C7.03249 8.0625 5.4375 6.46751 5.4375 4.5ZM6.6 9.9375C4.30111 9.9375 2.4375 11.8011 2.4375 14.1C2.4375 15.7361 3.76386 17.0625 5.4 17.0625H12.6C14.2361 17.0625 15.5625 15.7361 15.5625 14.1C15.5625 11.8011 13.6989 9.9375 11.4 9.9375H6.6Z"
+                        fill="#8E8E93" />
+                    </svg>
+                  </span>
+                  <span>الملف الشخصي</span>
+                </router-link>
+              </li>
+              <li><a class="dropdown-item" href="#">
+
+                  <span class="ps-2">
+                    <svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M2.325 8.7C2.4 8.625 2.4 8.55 2.475 8.475L4.725 6.225C5.025 5.925 5.475 5.925 5.775 6.225C6.075 6.525 6.075 6.975 5.775 7.275L4.8 8.25H8.25C8.7 8.25 9 8.55 9 9C9 9.45 8.7 9.75 8.25 9.75H4.8L5.775 10.725C6.075 11.025 6.075 11.475 5.775 11.775C5.625 11.925 5.4 12 5.25 12C5.1 12 4.875 11.925 4.725 11.775L2.475 9.525C2.4 9.45 2.325 9.375 2.325 9.3C2.25 9.075 2.25 8.925 2.325 8.7Z"
+                        fill="#8E8E93" />
+                      <path
+                        d="M6.375 13.575C7.2 14.025 8.1 14.25 9 14.25C11.925 14.25 14.25 11.925 14.25 9C14.25 6.075 11.925 3.75 9 3.75C8.1 3.75 7.2 3.975 6.375 4.425C6 4.65 5.55 4.5 5.325 4.125C5.1 3.75 5.25 3.3 5.625 3.075C6.675 2.55 7.8 2.25 9 2.25C12.75 2.25 15.75 5.25 15.75 9C15.75 12.75 12.75 15.75 9 15.75C7.8 15.75 6.675 15.45 5.625 14.85C5.25 14.625 5.175 14.175 5.325 13.8C5.55 13.5 6 13.35 6.375 13.575Z"
+                        fill="#8E8E93" />
+                    </svg>
+
+                  </span>
+                  <span>تسجيل الخروج</span>
+                </a></li>
+
+            </ul>
+
           </li>
           <li>
             <div class="d-md-none d-block">
@@ -65,34 +97,7 @@
       </div>
     </div>
 
-    <!-- dropdown profile -->
-    <div class="profile-dropdown animate__animated animate__fadeInLeft" id="profile-dropdown">
-      <ul>
-        <li>
-          <a href="">
-            <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M3.4375 4.5C3.4375 2.53249 5.03249 0.9375 7 0.9375C8.96751 0.9375 10.5625 2.53249 10.5625 4.5C10.5625 6.46751 8.96751 8.0625 7 8.0625C5.03249 8.0625 3.4375 6.46751 3.4375 4.5ZM4.6 9.9375C2.30111 9.9375 0.4375 11.8011 0.4375 14.1C0.4375 15.7361 1.76386 17.0625 3.4 17.0625H10.6C12.2361 17.0625 13.5625 15.7361 13.5625 14.1C13.5625 11.8011 11.6989 9.9375 9.4 9.9375H4.6Z"
-                fill="#8E8E93" />
-            </svg>
-            الملف الشخصي
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M2.325 8.7C2.4 8.625 2.4 8.55 2.475 8.475L4.725 6.225C5.025 5.925 5.475 5.925 5.775 6.225C6.075 6.525 6.075 6.975 5.775 7.275L4.8 8.25H8.25C8.7 8.25 9 8.55 9 9C9 9.45 8.7 9.75 8.25 9.75H4.8L5.775 10.725C6.075 11.025 6.075 11.475 5.775 11.775C5.625 11.925 5.4 12 5.25 12C5.1 12 4.875 11.925 4.725 11.775L2.475 9.525C2.4 9.45 2.325 9.375 2.325 9.3C2.25 9.075 2.25 8.925 2.325 8.7Z"
-                fill="#8E8E93" />
-              <path
-                d="M6.375 13.575C7.2 14.025 8.1 14.25 9 14.25C11.925 14.25 14.25 11.925 14.25 9C14.25 6.075 11.925 3.75 9 3.75C8.1 3.75 7.2 3.975 6.375 4.425C6 4.65 5.55 4.5 5.325 4.125C5.1 3.75 5.25 3.3 5.625 3.075C6.675 2.55 7.8 2.25 9 2.25C12.75 2.25 15.75 5.25 15.75 9C15.75 12.75 12.75 15.75 9 15.75C7.8 15.75 6.675 15.45 5.625 14.85C5.25 14.625 5.175 14.175 5.325 13.8C5.55 13.5 6 13.35 6.375 13.575Z"
-                fill="#8E8E93" />
-            </svg>
-            تسجيل الخروج
-          </a>
-        </li>
-      </ul>
-    </div>
+  
 
     <!-- Notification modal  -->
     <!-- Button trigger modal -->
@@ -280,6 +285,12 @@ export default {
 </script>
 
 <style>
+.dropdown-toggle::after {
+  display: none !important;
+}
+.dropdown-item{
+  text-align: right;
+}
 .ad-link {
   background-color: #2E637F1A;
   height: 100%;
@@ -406,14 +417,16 @@ export default {
 }
 
 @media only screen and (max-width: 768px) {
-  #collapseExample{
+  #collapseExample {
     height: 400px;
     overflow-y: scroll;
     font-size: 12px;
   }
-  .multi-range input[type=range]{
+
+  .multi-range input[type=range] {
     width: 250px;
   }
+
   .login-section {
     width: 100%;
     margin-right: 0%;
@@ -489,17 +502,19 @@ export default {
   .place-card {
     width: 250px;
   }
-  .products-cards{
+
+  .products-cards {
     background-color: white;
     width: 97%;
     margin: 50% auto 0% auto;
     border-radius: 20px;
     padding: 20px;
-   
+
   }
+
   .navbar-nav {
-flex-direction: row !important;
-}
+    flex-direction: row !important;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -512,9 +527,10 @@ flex-direction: row !important;
     margin-right: 0px;
     height: auto;
   }
+
   .navbar-nav {
-flex-direction: row !important;
-}
+    flex-direction: row !important;
+  }
 
 }
 </style>
