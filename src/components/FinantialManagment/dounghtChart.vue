@@ -1,7 +1,8 @@
 <template>
   <div class="dounght">
-    <div class="bg-white flex justify-content-center">
-      <div class="chart-container">
+    <div class=" flex justify-content-between">
+      <div class="chart-container" style="width: 350px; height: 300px;">
+      
         <Chart type="doughnut" :data="chartData" :options="chartOptions" class="h-100" />
       </div>
     </div>
@@ -38,7 +39,7 @@ const setChartOptions = () => {
     plugins: {
       legend: {
         labels: {
-          cutout: '60%',
+          cutout: '30%',
         }
       }
     },

@@ -133,4 +133,11 @@ export default {
   height: 380px;
   overflow-y: scroll;
 }
+@media only screen and (max-width: 600px) {
+
+.page-container {
+    margin-right: 0px;
+    height: auto;
+}
+}
 </style>
