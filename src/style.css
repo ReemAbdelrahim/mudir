@@ -47,7 +47,7 @@ p{
 
   .page-container {
     margin-right: 0px;
-    height: auto;
+    height: auto !important;
   }
 
 }

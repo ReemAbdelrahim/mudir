@@ -6,7 +6,7 @@
       <div class="" id="navbarScroll">
         <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll gap-1 align-items-center">
           <li class="nav-item ad-link">
-            <a class="nav-link" aria-current="page" href="make-ad.html">
+            <router-link to="myads/add" class="nav-link" aria-current="page" >
               <span>انشاء اعلان</span>
 
               <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -17,7 +17,7 @@
                   d="M19.25 11C19.25 6.17 15.33 2.25 10.5 2.25C5.67 2.25 1.75 6.17 1.75 11C1.75 15.83 5.67 19.75 10.5 19.75"
                   stroke="#2E637F" stroke-width="1.3125" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
-            </a>
+            </router-link>
           </li>
           <li class="nav-item">
             <a class="nav-link notification-link" href="#" type="button" data-bs-toggle="modal"
@@ -77,7 +77,7 @@
 
           </li>
           <li>
-            <div class="d-md-none d-block">
+            <div class="d-lg-none d-block">
               <span @click="toggleSide()"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -515,6 +515,10 @@ export default {
   .navbar-nav {
     flex-direction: row !important;
   }
+  .page-container {
+    margin-right: 0px !important;
+    height: auto !important;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -526,6 +530,7 @@ export default {
   .page-container {
     margin-right: 0px;
     height: auto;
+ 
   }
 
   .navbar-nav {

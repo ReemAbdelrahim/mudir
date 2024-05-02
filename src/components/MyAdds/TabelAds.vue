@@ -1,8 +1,8 @@
 <template>
     <div class="bg-light p-10">
-        <div class=" page-second-container p-3">
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="d-flex justify-content-right gap-3">
+        <div class="bg-white rounded p-3">
+            <div class="d-flex justify-content-between align-items-center ">
+                <div class="d-flex justify-content-right gap-3 flex-wrap">
                     <div class=" d-flex ">
                         <label for="" class=" d-flex align-self-center">حالة العقار</label>
                     </div>
@@ -241,34 +241,7 @@
                                                 </a></li>
                                         </ul>
 
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="exampleModal2" tabindex="-1"
-                                            aria-labelledby="exampleModal2Label" aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered">
-                                                <div class="modal-content p-3">
-
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                        aria-label="Close"></button>
-
-                                                    <div class="modal-body ">
-                                                        <div class="text-center">
-                                                            <img src="/images/delete.png" alt="">
-                                                            <h4 class="py-3">حذف العقار x</h4>
-                                                            <h4>هل أنت متأكد من حذف هذا العقار نهائيا ؟</h4>
-                                                        </div>
-                                                        <div class="d-flex">
-                                                            <div class="w-50 p-2">
-                                                                <button class="delete-btn">نعم حذف </button>
-                                                            </div>
-                                                            <div class="w-50 p-2">
-                                                                <button class="cancel-btn">الغاء</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
+                                      
                                     </div>
                                 </div>
                             </td>
@@ -576,6 +549,34 @@
                     </tbody>
                 </table>
             </div>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal2" tabindex="-1"
+                                            aria-labelledby="exampleModal2Label" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content p-3">
+
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+
+                                                    <div class="modal-body ">
+                                                        <div class="text-center">
+                                                            <img src="/images/delete.png" alt="">
+                                                            <h4 class="py-3">حذف العقار x</h4>
+                                                            <h4>هل أنت متأكد من حذف هذا العقار نهائيا ؟</h4>
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <div class="w-50 p-2">
+                                                                <button class="delete-btn">نعم حذف </button>
+                                                            </div>
+                                                            <div class="w-50 p-2">
+                                                                <button class="cancel-btn">الغاء</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
             <nav aria-label="...">
                 <ul class="pagination justify-content-center gap-2">
                     <li class="page-item ">

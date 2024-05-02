@@ -5,7 +5,7 @@
   <div class="products-cards">
    <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-4 col-md-6 col-12 mb-2">
+      <div class="col-lg-4 col-md-6 col-12 mb-3">
         <div class="bulding-details">
           <div class="buildding-img">
             <img src="/images/bulding-img.jfif" alt="" class="w-100">
@@ -83,7 +83,7 @@
           </p>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 col-12 mb-2">
+      <div class="col-lg-4 col-md-6 col-12 mb-3">
         <div class="bulding-details">
           <div class="buildding-img">
             <img src="/images/bulding-img.jfif" alt="" class="w-100">
@@ -161,7 +161,7 @@
           </p>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 col-12 mb-2">
+      <div class="col-lg-4 col-md-6 col-12 mb-3">
         <div class="bulding-details">
           <div class="buildding-img">
             <img src="/images/bulding-img.jfif" alt="" class="w-100">
@@ -239,7 +239,7 @@
           </p>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 col-12 mb-2">
+      <div class="col-lg-4 col-md-6 col-12 mb-3">
         <div class="bulding-details">
           <div class="buildding-img">
             <img src="/images/bulding-img.jfif" alt="" class="w-100">

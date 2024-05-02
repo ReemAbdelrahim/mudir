@@ -37,7 +37,7 @@
               </span>
               <span>لمكان الأساسي, المكان الفرعي, تفاصيل المكان</span>
             </p>
-            <div class="d-flex justify-content-between ">
+            <div class="d-flex justify-content-between flex-wrap gap-3 ">
               <p>
                 <span>المساحه</span>
                 <span class="px-2"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
@@ -99,14 +99,14 @@
                 <span class="caded-blue">1 علوى</span>
               </p>
             </div>
-            <p class="mt-3">
+            <p class="mt-3 resopnsive-p">
               هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
               أن تولد مثل هذا النص أو العديد من النصوص هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
               هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص هذا النص هو مثال لنص يمكن
               أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل
             </p>
           </div>
-          <div class="chat-circle"  @click="toggleSoro">
+          <div class="chat-circle" @click="toggleSoro">
             <p><svg width="30" height="30" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M33.9166 9.63558V17.498C33.9166 19.456 33.2691 21.1056 32.1128 22.2464C30.972 23.4027 29.3224 24.0501 27.3645 24.0501V26.8405C27.3645 27.8889 26.1928 28.521 25.3295 27.9352L23.8341 26.9485C23.9728 26.4706 24.0345 25.9464 24.0345 25.3914V19.1169C24.0345 15.9719 21.9378 13.8752 18.7928 13.8752H8.32491C8.10908 13.8752 7.90867 13.8906 7.70825 13.906V9.63558C7.70825 5.70433 10.3291 3.0835 14.2603 3.0835H27.3645C31.2958 3.0835 33.9166 5.70433 33.9166 9.63558Z"
@@ -163,11 +163,11 @@
                 </div>
               </div>
             </div>
-             </div>
+          </div>
         </div>
         <div class="col-lg-4">
-          <div class="d-flex justify-content-between">
-            <button class="btn btn-success px-4">
+          <div class="d-flex justify-content-between gap-2">
+            <button class="btn btn-success px-lg-4 px-2">
               <span class="ps-2">تعديل</span>
               <span><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -182,7 +182,7 @@
                 </svg>
               </span>
             </button>
-            <button class="btn btn-danger px-4">
+            <button class="btn btn-danger  px-lg-4 px-2">
               <span class="ps-2">حذف </span>
               <span><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -202,7 +202,7 @@
               </span>
             </button>
 
-            <button class="btn btn-secondary text-white px-4"><span class="ps-2">ايقاف</span>
+            <button class="btn btn-secondary text-white px-lg-4 px-2"><span class="ps-2">ايقاف</span>
               <span><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M13.8709 2.25H8.79588C8.20088 2.25 7.36087 2.6 6.94087 3.02L3.35338 6.60751C2.93338 7.02751 2.58337 7.86751 2.58337 8.46251V13.5375C2.58337 14.1325 2.93338 14.9725 3.35338 15.3925L6.94087 18.98C7.36087 19.4 8.20088 19.75 8.79588 19.75H13.8709C14.4659 19.75 15.3059 19.4 15.7259 18.98L19.3134 15.3925C19.7334 14.9725 20.0834 14.1325 20.0834 13.5375V8.46251C20.0834 7.86751 19.7334 7.02751 19.3134 6.60751L15.7259 3.02C15.3059 2.6 14.4659 2.25 13.8709 2.25Z"
@@ -213,15 +213,19 @@
               </span></button>
           </div>
 
-          <div class="responsive-map3" id="mmap">
+          <!-- <div class="responsive-map3" id="mmap">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.7806761080233!2d-93.29138368446431!3d44.96844997909819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b32b6ee2c87c91%3A0xc20dff2748d2bd92!2sWalker+Art+Center!5e0!3m2!1sen!2sus!4v1514524647889"
               frameborder="0" style="border: 0" allowfullscreen></iframe>
+            </div> -->
+          <div class="mt-3 position-relative">
+            <Map></Map>
             <div class="overlay-info d-flex gap-3 p-2">
               <h5>اسم المكان</h5>
               <a href="">عرض كامل للخريطة</a>
             </div>
           </div>
+
 
           <p class="fs-6 pt-3">الخدمات المتاحة</p>
           <div class="d-flex gap-4 pt-3">
@@ -277,8 +281,13 @@
 </template>
 
 <script>
+import Map from '../Home/Map.vue'
 export default {
+  components: {
+      Map
+    },
   data() {
+    
     return {
       isSoroVisible: false
     };
@@ -330,16 +339,20 @@ export default {
   font-size: 16px;
 }
 
-.responsive-map3 {
+.responsive-map2 {
   overflow: hidden;
   position: relative;
   height: 300px;
-  margin-top: 20px;
 }
 
-.responsive-map3 iframe {
-  width: 100%;
+.responsive-map2 iframe {
+  left: 0;
+  top: 0;
   height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 20px;
+  z-index: 1;
 }
 
 .overlay-info {
@@ -347,6 +360,7 @@ export default {
   position: absolute;
   top: 10px;
   right: 10px;
+  z-index: 12;
 }
 
 .overlay-info a {
@@ -359,7 +373,7 @@ export default {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-line-height: 20px;
+  line-height: 20px;
   text-align: center;
   position: absolute;
   bottom: 20px;
@@ -371,11 +385,12 @@ line-height: 20px;
 .chat-circle span {
   font-size: 12px;
 }
-.chats-box{
+
+.chats-box {
 
   background-color: white;
- width: 500px;
- height: 250px;
+  width: 500px;
+  height: 250px;
   text-align: center;
   position: absolute;
   bottom: 100px;
@@ -383,6 +398,26 @@ line-height: 20px;
   padding: 10px;
   box-shadow: 0px 5px 25px 0px #0000001A;
   border-radius: 10px;
-overflow-y: scroll;
+  overflow-y: scroll;
+  z-index: 10;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .chats-box {
+
+    width: 90%;
+    height: 250px;
+
+    position: absolute;
+    bottom: 100px;
+    right: 20px;
+
+    z-index: 10;
+  }
+
+  .resopnsive-p {
+    font-size: 12px;
+  }
 }
 </style>

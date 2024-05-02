@@ -2,7 +2,7 @@
       <div class="place-card"  v-show="isVisible" >
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-          <div class="share-save">
+          <div class="share-save d-flex">
             <button class="trigger">
 
               مشاركة
@@ -188,10 +188,10 @@
           </div>
         </div>
         <div class="d-flex pt-2">
-          <p class="show-details p-3 w-50 m-0">
+          <p class="show-details p-lg-3 w-50 m-0 p-md-2 p-1">
             <a href="">عرض التفاصيل</a>
           </p>
-          <p class="bg-primary text-center m-0 text-white w-50 p-3 fs-6">
+          <p class="bg-primary text-center m-0 text-white w-50 p-lg-3 p-md-2 p-1 fs-6">
             حجز الشقة
           </p>
         </div>
@@ -374,5 +374,15 @@ transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 .place-card {
     width: 250px;
   }
+  .share-save button {
+  border: 0;
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px 15px;
+  box-shadow: 0px 0px 24px 0px #00000026;
+  font-weight: 600;
+  font-size: 10px;
+}
+
 }
 </style>

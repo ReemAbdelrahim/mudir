@@ -1,14 +1,17 @@
 <template>
    <div class="page-container">
      <PlaceDetails></PlaceDetails>
+ 
     </div>
 </template>
 
 <script>
 import PlaceDetails from '../../components/MyAdds/PlaceDetails.vue';
+
 export default {
 components:{
   PlaceDetails,
+
 }
 }
 </script>
