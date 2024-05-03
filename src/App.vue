@@ -1,8 +1,8 @@
 <template>
 
   <div>
-    <navbar :toggleSide="toggleSide"  v-if="currentPath !== '/'"></navbar>
-    <sidebarVue v-if="isChecked && currentPath !== '/'"></sidebarVue>
+    <navbar :toggleSide="toggleSide"  v-if="currentPath !== '/' && currentPath !== '/register' && currentPath !== '/confirmPhone'"></navbar>
+    <sidebarVue v-if="isChecked && currentPath !== '/'&& currentPath !== '/register' && currentPath !== '/confirmPhone'"></sidebarVue>
     <router-view></router-view>
   </div>
 </template>

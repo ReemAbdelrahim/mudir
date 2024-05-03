@@ -3,7 +3,7 @@
         <div class="bg-light p-10 ">
             <div class="container-fluid p-2">
                 <div class="row row-height">
-                    <div class="col-md-4">
+                    <div class="col-md-4" v-if="!showDetails && isMobile()" >
                         <div class="side-chats">
                             <h4>الرسائل</h4>
                             <div class="mesage-search">
@@ -18,7 +18,7 @@
                                 </span>
                             </div>
 
-                            <div class=" d-flex mt-3 gap-4">
+                            <!-- <div class=" d-flex mt-3 gap-4">
                                 <div class="rouded-img">
                                     <img src="/images/roundedone.png" alt="">
                                     <p>اسم العقار</p>
@@ -35,8 +35,14 @@
                                     <img src="/images/roundedone.png" alt="">
                                     <p>اسم العقار</p>
                                 </div>
-                            </div>
-                            <div class="cureent-chat d-flex gap-2 mt-3">
+                            </div> -->
+
+
+
+
+
+
+                            <div class="cureent-chat d-flex gap-2 mt-3" @click="showDetails = true">
                                 <div class="person-img">
                                     <img src="/images/person.png" alt="">
                                 </div>
@@ -67,7 +73,7 @@
                         </div>
 
                     </div>
-                    <div class="col-md-8">
+                    <div  v-else-if="showDetails && isMobile()" class="col-md-8 ">
 
                         <div class="chat-content bg-white p-2 h-100">
                             <div class="chat-header d-flex gap-3">
@@ -87,6 +93,7 @@
                                     </p>
 
                                 </div>
+                                <button @click="showDetails = false">back</button>
 
                             </div>
                             <div class="scrollable-chat">
@@ -274,14 +281,19 @@
 export default {
   data() {
     return {
-      showDiv: false
+      showDiv: false,
+      showDetails: false,
     };
   },
   methods: {
     toggleDiv() {
       this.showDiv = !this.showDiv;
-    }
-  }
+    },
+    isMobile() {
+      return window.innerWidth <= 767; // Adjust the breakpoint as needed
+    },
+  },
+  
 };
 </script>
 

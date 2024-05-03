@@ -1,8 +1,8 @@
 <template>
     <div class="card mt-2">
-        <div class="d-flex justify-content-between p-3">
+        <div class="d-flex justify-content-between p-3 flex-wrap">
             <h5>الإيرادات <span class="text-primary fs-6">(80,547,140)</span></h5>
-            <div class="d-flex gap-2">
+            <div class="d-flex flex-wrap gap-2">
                 <ul class="nav nav-pills mb-3 bg-light p-1" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
@@ -48,7 +48,7 @@
                 </div>
             </div>
         </div>
-        <Chart type="bar" :data="chartData" :options="chartOptions" class="h-100" />
+        <Chart type="bar" :data="chartData" :options="chartOptions" class="h-100 responsive-chart" />
     </div>
 
 </template>

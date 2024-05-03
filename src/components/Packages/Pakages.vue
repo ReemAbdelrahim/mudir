@@ -52,7 +52,7 @@
                                             </button>
                                         </div>
                                         <div class="w-50 p-2">
-                                            <button type="button" class="btn btn-outline-primary w-100">تفاصيل
+                                            <button type="button" class="btn btn-outline-primary resp w-100">تفاصيل
                                                 أكثر</button>
                                         </div>
                                     </div>
@@ -107,7 +107,7 @@
                                             </button>
                                         </div>
                                         <div class="w-50 p-2">
-                                            <button type="button" class="btn btn-outline-primary w-100">تفاصيل
+                                            <button type="button" class="btn btn-outline-primary resp w-100">تفاصيل
                                                 أكثر</button>
                                         </div>
                                     </div>
@@ -138,5 +138,10 @@ export default {
     height: 90vh;
     position: relative;
     overflow-x: hidden;
+}
+@media only screen and (max-width: 600px) {
+.resp{
+    padding: 7px;
+}
 }
 </style>

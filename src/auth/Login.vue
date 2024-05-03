@@ -16,6 +16,7 @@
         <button>
             <router-link to="/home" class="router-link-btn">تسجيل الدخول </router-link>
         </button>
+        <router-link to="/register" class="">انشاء حساب </router-link>
     
       </div>
     </div>

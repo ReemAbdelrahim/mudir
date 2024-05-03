@@ -1,7 +1,7 @@
 <template>
   <div class="dounght">
     <div class=" flex justify-content-between">
-      <div class="chart-container" style="width: 350px; height: 300px;">
+      <div class="chart-containerr" >
       
         <Chart type="doughnut" :data="chartData" :options="chartOptions" class="h-100" />
       </div>
@@ -48,9 +48,14 @@ const setChartOptions = () => {
 </script>
 
 <style>
-/* .dounght {
-  height: 300px;
-} */
-
-
+.chart-containerr{
+width: 300px;
+height: 300px;
+}
+@media only screen and (max-width: 600px) {
+  .chart-containerr{
+width: 250px;
+height: 250px;
+}
+}
 </style>

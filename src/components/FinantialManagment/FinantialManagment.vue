@@ -7,11 +7,11 @@
           <div class="row">
             <div class="col-lg-8 ">
               <div class="bg-white scroll-notify p-3">
-                <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-between ">
                   <h4>إشعارات</h4>
                   <p class="text-primary">تم سداد الكل</p>
                 </div>
-                <div class="d-flex justify-content-between mt-3">
+                <div class="d-flex justify-content-between flex-wrap mt-3">
                   <div>
                     <p class="text-gray">سداد قسط ايجار عقار x بإسم Y</p>
                   </div>
@@ -21,7 +21,7 @@
                     <button class="btn btn-light">لاحقا</button>
                   </div>
                 </div>
-                <div class="d-flex justify-content-between mt-3">
+                <div class="d-flex justify-content-between flex-wrap mt-3">
                   <div>
                     <p class="text-gray">سداد قسط ايجار عقار x بإسم Y</p>
                   </div>
@@ -31,7 +31,7 @@
                     <button class="btn btn-light">لاحقا</button>
                   </div>
                 </div>
-                <div class="d-flex justify-content-between mt-3">
+                <div class="d-flex justify-content-between flex-wrap mt-3">
                   <div>
                     <p class="text-gray">سداد قسط ايجار عقار x بإسم Y</p>
                   </div>
@@ -41,7 +41,7 @@
                     <button class="btn btn-light">لاحقا</button>
                   </div>
                 </div>
-                <div class="d-flex justify-content-between mt-3">
+                <div class="d-flex justify-content-between flex-wrap mt-3">
                   <div>
                     <p class="text-gray">سداد قسط ايجار عقار x بإسم Y</p>
                   </div>
@@ -51,7 +51,7 @@
                     <button class="btn btn-light">لاحقا</button>
                   </div>
                 </div>
-                <div class="d-flex justify-content-between mt-3">
+                <div class="d-flex justify-content-between flex-wrap mt-3">
                   <div>
                     <p class="text-gray">سداد قسط ايجار عقار x بإسم Y</p>
                   </div>
@@ -61,7 +61,7 @@
                     <button class="btn btn-light">لاحقا</button>
                   </div>
                 </div>
-                <div class="d-flex justify-content-between mt-3">
+                <div class="d-flex justify-content-between flex-wrap mt-3">
                   <div>
                     <p class="text-gray">سداد قسط ايجار عقار x بإسم Y</p>
                   </div>
@@ -71,7 +71,7 @@
                     <button class="btn btn-light">لاحقا</button>
                   </div>
                 </div>
-                <div class="d-flex justify-content-between mt-3">
+                <div class="d-flex justify-content-between flex-wrap mt-3">
                   <div>
                     <p class="text-gray">سداد قسط ايجار عقار x بإسم Y</p>
                   </div>

@@ -88,7 +88,7 @@
                                                 </div>
                                                 <div class="decoration-card-content p-2">
                                                     <h5 class="text-white">ديكورات لغرفة المعيشة</h5>
-                                                    <div class="d-flex justify-content-between">
+                                                    <div class="d-flex justify-content-between flex-wrap ">
                                                         <div class="d-flex gap-2 pt-3">
                                                             <img src="/images/mark.jpg" alt="" class="mark-img">
                                                             <div class="text-white">
@@ -137,7 +137,7 @@
                                                 </div>
                                                 <div class="decoration-card-content p-2">
                                                     <h5 class="text-white">ديكورات لغرفة المعيشة</h5>
-                                                    <div class="d-flex justify-content-between">
+                                                    <div class="d-flex justify-content-between flex-wrap">
                                                         <div class="d-flex gap-2 pt-3">
                                                             <img src="/images/mark.jpg" alt="" class="mark-img">
                                                             <div class="text-white">
@@ -186,7 +186,7 @@
                                                 </div>
                                                 <div class="decoration-card-content p-2">
                                                     <h5 class="text-white">ديكورات لغرفة المعيشة</h5>
-                                                    <div class="d-flex justify-content-between">
+                                                    <div class="d-flex justify-content-between flex-wrap">
                                                         <div class="d-flex gap-2 pt-3">
                                                             <img src="/images/mark.jpg" alt="" class="mark-img">
                                                             <div class="text-white">
@@ -235,7 +235,7 @@
                                                 </div>
                                                 <div class="decoration-card-content p-2">
                                                     <h5 class="text-white">ديكورات لغرفة المعيشة</h5>
-                                                    <div class="d-flex justify-content-between">
+                                                    <div class="d-flex justify-content-between flex-wrap">
                                                         <div class="d-flex gap-2 pt-3">
                                                             <img src="/images/mark.jpg" alt="" class="mark-img">
                                                             <div class="text-white">
@@ -285,7 +285,7 @@
                                                 </div>
                                                 <div class="decoration-card-content p-2">
                                                     <h5 class="text-white">ديكورات لغرفة المعيشة</h5>
-                                                    <div class="d-flex justify-content-between">
+                                                    <div class="d-flex justify-content-between flex-wrap">
                                                         <div class="d-flex gap-2 pt-3">
                                                             <img src="/images/mark.jpg" alt="" class="mark-img">
                                                             <div class="text-white">
@@ -334,7 +334,7 @@
                                                 </div>
                                                 <div class="decoration-card-content p-2">
                                                     <h5 class="text-white">ديكورات لغرفة المعيشة</h5>
-                                                    <div class="d-flex justify-content-between">
+                                                    <div class="d-flex justify-content-between flex-wrap">
                                                         <div class="d-flex gap-2 pt-3">
                                                             <img src="/images/mark.jpg" alt="" class="mark-img">
                                                             <div class="text-white">
@@ -437,7 +437,7 @@
 
                                                 <div class="decoration-card-content p-2">
                                                     <h5 class="text-white">ديكورات لغرفة المعيشة</h5>
-                                                    <div class="d-flex justify-content-between">
+                                                    <div class="d-flex justify-content-between flex-wrap">
                                                         <div class="d-flex gap-2 pt-3">
                                                             <img src="/images/mark.jpg" alt="" class="mark-img">
                                                             <div class="text-white">
@@ -529,7 +529,7 @@
 
                                                 <div class="decoration-card-content p-2">
                                                     <h5 class="text-white">ديكورات لغرفة المعيشة</h5>
-                                                    <div class="d-flex justify-content-between">
+                                                    <div class="d-flex justify-content-between flex-wrap">
                                                         <div class="d-flex gap-2 pt-3">
                                                             <img src="/images/mark.jpg" alt="" class="mark-img">
                                                             <div class="text-white">
@@ -722,6 +722,18 @@ export default {
 
 .btn-green {
     background-color: var(--green);
+
+}
+@media only screen and (max-width: 600px) {
+    .decoration-card-content {
+    position: absolute;
+    top: 43%;
+    width: 100%;
+}
+.add-contract {
+    padding: 5px;
+    font-size: 12px;
+}
 
 }
 </style>

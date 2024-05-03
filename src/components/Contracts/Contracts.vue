@@ -30,8 +30,8 @@
                     </svg>
                   </span>
                 </div>
-                <div class="w-50 text-center ">
-                  <button class="btn btn-primary add-contract" data-bs-toggle="modal" href="#editModal" role="button">
+                <div class="w-50 text-center align-self-center ">
+                  <button class="btn btn-primary add-contract  " data-bs-toggle="modal" href="#editModal" role="button">
                     تسجيل عقد جديد
                     <span><svg width="21" height="22" viewBox="0 0 21 22" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -50,34 +50,33 @@
             </div>
           </div>
 
-              <!--delete Modal -->
-              <div class="modal fade" id="exampleModal2" tabindex="-1"
-                              aria-labelledby="exampleModal2Label" aria-hidden="true">
-                              <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content p-3">
+          <!--delete Modal -->
+          <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content p-3">
 
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
-                                  <div class="modal-body ">
-                                    <div class="text-center">
-                                      <img src="/images/delete.png" alt="">
-                                      <h4 class="py-3">حذف العقد x</h4>
-                                      <h4>هل أنت متأكد من حذف هذا العقد نهائيا ؟</h4>
-                                    </div>
-                                    <div class="d-flex">
-                                      <div class="w-50 p-2">
-                                        <button class="delete-btn">نعم حذف </button>
-                                      </div>
-                                      <div class="w-50 p-2">
-                                        <button class="cancel-btn">الغاء</button>
-                                      </div>
-                                    </div>
-                                  </div>
+                <div class="modal-body ">
+                  <div class="text-center">
+                    <img src="/images/delete.png" alt="">
+                    <h4 class="py-3">حذف العقد x</h4>
+                    <h4>هل أنت متأكد من حذف هذا العقد نهائيا ؟</h4>
+                  </div>
+                  <div class="d-flex">
+                    <div class="w-50 p-2">
+                      <button class="delete-btn">نعم حذف </button>
+                    </div>
+                    <div class="w-50 p-2">
+                      <button class="cancel-btn">الغاء</button>
+                    </div>
+                  </div>
+                </div>
 
-                                </div>
-                              </div>
-                            </div>
+              </div>
+            </div>
+          </div>
 
           <div class="tab-content mt-3" id="myTabContent">
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -178,7 +177,7 @@
 
 
 
-                          
+
 
 
 
@@ -282,8 +281,8 @@
 
 
                               <li>
-                                <a class="dropdown-item"  @click="showModalAllData"  data-bs-toggle="modal" href="#allDataModal"
-                                  role="button">
+                                <a class="dropdown-item" @click="showModalAllData" data-bs-toggle="modal"
+                                  href="#allDataModal" role="button">
                                   <span class="ps-2 ">
                                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                       xmlns="http://www.w3.org/2000/svg">
@@ -306,8 +305,8 @@
                                 </a>
                               </li>
                               <li>
-                                <a class="dropdown-item"  @click="showModalUpload"  data-bs-toggle="modal" href="#uplaodModal"
-                                  role="button" >
+                                <a class="dropdown-item" @click="showModalUpload" data-bs-toggle="modal"
+                                  href="#uplaodModal" role="button">
                                   <span class="ps-2">
                                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                       xmlns="http://www.w3.org/2000/svg">
@@ -332,8 +331,8 @@
                               </li>
 
                               <li>
-                                <a @click="showModalTwo" class="dropdown-item" data-bs-toggle="modal" href="#editModalTwo"
-                                  role="button">
+                                <a @click="showModalTwo" class="dropdown-item" data-bs-toggle="modal"
+                                  href="#editModalTwo" role="button">
                                   <span class="ps-2">
                                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                       xmlns="http://www.w3.org/2000/svg">
@@ -389,7 +388,7 @@
 
 
 
-                        
+
 
 
 
@@ -778,5 +777,12 @@ export default {
   border: 1px solid #D9DBE1;
   border-radius: 10px;
   margin-left: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .add-contract {
+    padding: 5px 7px;
+    font-size: 13px;
+  }
 }
 </style>
